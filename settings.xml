@@ -2,6 +2,15 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <localRepository>/usr/share/maven/ref/repository</localRepository>
+  <!--
+  <servers>
+    <server>
+      <id>archetype</id>
+      <username/>
+      <password/>
+    </server>
+  </servers>
+  -->
   <profiles>
     <profile>
       <id>build</id>
@@ -28,6 +37,18 @@
           <id>spring-repo</id>
           <name>Spring Repository</name>
           <url>http://repo.spring.io/release</url>
+        </repository>
+        <repository>
+          <id>archetype</id>
+          <url>https://dilbertside.github.io/spring-mvc-start-archetype</url>
+          <releases>
+            <enabled>true</enabled>
+            <checksumPolicy>fail</checksumPolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <checksumPolicy>warn</checksumPolicy>
+          </snapshots>
         </repository>
         <repository>
           <snapshots>
