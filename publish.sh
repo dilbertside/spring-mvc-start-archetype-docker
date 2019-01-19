@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# check dependencies
+(
+    type docker &>/dev/null || ( echo "docker is not available"; exit 1 )
+)>&2
+
+
 VERSION_SMSAD=5.1.0
 VERSION_BOM=555e40549d
 IMG=spring-mvc-start-archetype-docker
