@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>docker</artifactId>
-  <version>5.1.1</version>
+  <version>5.1.2</version>
   
   <parent>
     <groupId>com.github.dilbertside</groupId>
@@ -12,7 +12,7 @@
   </parent>
   
   <properties>
-    <spring-mvc-start-archetype.version>5.1.1</spring-mvc-start-archetype.version>
+    <spring-mvc-start-archetype.version>5.1.2</spring-mvc-start-archetype.version>
   </properties>
   
   <dependencies>

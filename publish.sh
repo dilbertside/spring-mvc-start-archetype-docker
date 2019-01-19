@@ -6,7 +6,7 @@
 )>&2
 
 
-VERSION_SMSAD=5.1.1
+VERSION_SMSAD=5.1.2
 VERSION_BOM=059b220c4b
 IMG=spring-mvc-start-archetype-docker
 REPO=diside
