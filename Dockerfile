@@ -1,4 +1,4 @@
-FROM maven:3.6.0-jdk-11-slim
+FROM maven:3.6.0-jdk-8-slim
 ARG VERSION=5.1.1
 MAINTAINER DBS "https://github.com/dilbertside"
 LABEL Description="maven runner for https://github.com/dilbertside/spring-mvc-start-archetype" Vendor="OSS" Version="$VERSION"
