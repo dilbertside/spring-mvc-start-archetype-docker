@@ -7,13 +7,12 @@
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>555e40549d</version>
+    <version>059b220c4b</version>
     <relativePath />
   </parent>
   
   <properties>
     <spring-mvc-start.version>5.1.0</spring-mvc-start.version>
-    <bom-dbs.version>555e40549d</bom-dbs.version>
   </properties>
   
   <dependencies>
@@ -249,6 +248,7 @@
       <plugin>
         <groupId>com.github.ekryd.sortpom</groupId>
         <artifactId>sortpom-maven-plugin</artifactId>
+        <version>${maven-sortpom-plugin.version}</version>
       </plugin>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
