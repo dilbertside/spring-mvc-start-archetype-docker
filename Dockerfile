@@ -10,7 +10,7 @@ RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml versions:set -Dn
 RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml dependency:resolve 
 RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml archetype:generate \
     -DarchetypeGroupId=com.github.dilbertside \
-    -DarchetypeArtifactId=spring-mvc-start \
+    -DarchetypeArtifactId=spring-mvc-start-archetype \
     -DarchetypeVersion=$VERSION \
     -DgroupId=com.test.test \
     -Dpackage=com.test.test \
