@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>docker</artifactId>
-  <version>5.1.0</version>
+  <version>5.1.1</version>
   
   <parent>
     <groupId>com.github.dilbertside</groupId>
@@ -12,7 +12,7 @@
   </parent>
   
   <properties>
-    <spring-mvc-start.version>5.1.0</spring-mvc-start.version>
+    <spring-mvc-start-archetype.version>5.1.1</spring-mvc-start-archetype.version>
   </properties>
   
   <dependencies>
@@ -226,7 +226,7 @@
     <dependency>
       <groupId>com.github.dilbertside</groupId>
       <artifactId>spring-mvc-start-archetype</artifactId>
-      <version>${spring-mvc-start.version}</version>
+      <version>${spring-mvc-start-archetype.version}</version>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
