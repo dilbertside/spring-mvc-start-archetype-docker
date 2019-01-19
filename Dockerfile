@@ -5,10 +5,10 @@ LABEL Description="maven runner for https://github.com/dilbertside/spring-mvc-st
 
 COPY settings.xml /usr/share/maven/ref/
 COPY pom.xml /tmp/pom.xml
-RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml versions:set -DnewVersion="$VERSION" && \
-    mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml versions:set-property -Dproperty=spring-mvc-start.version -DnewVersion="$VERSION"
-RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml dependency:resolve 
-RUN mvn -B -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml archetype:generate \
+RUN mvn -B -q -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml versions:set -DnewVersion="$VERSION" && \
+    mvn -B -q -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml versions:set-property -Dproperty=spring-mvc-start.version -DnewVersion="$VERSION"
+RUN mvn -B -q -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml dependency:resolve 
+RUN mvn --batch-mode --fail-never -q -f /tmp/pom.xml -s /usr/share/maven/ref/settings.xml archetype:generate \
     -DarchetypeGroupId=com.github.dilbertside \
     -DarchetypeArtifactId=spring-mvc-start-archetype \
     -DarchetypeVersion=$VERSION \
