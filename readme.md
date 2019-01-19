@@ -1,4 +1,6 @@
-This container is a maven runner to generate using the m2 repository package in the container
+This container is a maven runner to generate a project using the m2 repository package in the container for the archetype
+
+[Spring Web MVC Maven Archetype starter](https://github.com/dilbertside/spring-mvc-start-archetype)
 
 # How to build locally
 
