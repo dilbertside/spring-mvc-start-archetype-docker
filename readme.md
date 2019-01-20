@@ -15,5 +15,3 @@ Goto one directory which does not contain any pom.xml and run the following
 docker run -it --rm -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven diside/spring-mvc-start-archetype-docker mvn archetype:generate -DarchetypeGroupId=com.github.dilbertside -DarchetypeArtifactId=spring-mvc-start-archetype -DarchetypeVersion=5.1.4
 ```
 
-# TODO
-* fix build Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter

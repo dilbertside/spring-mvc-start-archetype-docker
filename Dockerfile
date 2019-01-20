@@ -14,7 +14,7 @@ RUN cd /tmp && mvn --batch-mode -q -s /usr/share/maven/ref/settings.xml archetyp
     -DartifactId=dummy 
 # store also generated project dependencies to local repo, to help build artefact with this container
 RUN cd /tmp/dummy && \
-    mvn -q --fail-never -s /usr/share/maven/ref/settings.xml package test -Ptest && \
+    mvn -q -s /usr/share/maven/ref/settings.xml package test -Ptest && \
     rm -rf /tmp/dummy
     
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
