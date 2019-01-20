@@ -2,6 +2,9 @@ FROM maven:3.6.0-jdk-8-slim
 ARG VERSION=5.1.4
 LABEL Description="maven runner for https://github.com/dilbertside/spring-mvc-start-archetype" Vendor="https://github.com/dilbertside" Version="$VERSION"
 
+# https://stackoverflow.com/questions/53010200/maven-surefire-could-not-find-forkedbooter-class
+ENV JAVA_TOOL_OPTIONS="-Djdk.net.URLClassPath.disableClassPathURLCheck=true"
+
 COPY settings.xml /usr/share/maven/ref/
 #build local repo by making a dry run of the generator as mvn dependency:resolve and mvn dependency:resolve-plugins do not work (missing deps)
 RUN cd /tmp && mvn --batch-mode -q -s /usr/share/maven/ref/settings.xml archetype:generate \
