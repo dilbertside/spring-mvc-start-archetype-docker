@@ -1,7 +1,18 @@
+# Spring MVC Start Maven archetype docker runner
+
 [![](https://img.shields.io/docker/automated/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
 
-This container is a maven runner to generate a project using the m2 repository package in the container for the archetype
+[![](https://img.shields.io/docker/build/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker)
+
+
+
+This container is a maven runner to generate a project using the m2 repository packaged in the container for the archetype 
 [Spring Web MVC Maven Archetype starter](https://github.com/dilbertside/spring-mvc-start-archetype)
+
+## [See Docker Hub for updated list of tags](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
+
+## [Dockerfile reference](https://github.com/dilbertside/spring-mvc-start-archetype-docker/blob/master/Dockerfile)
+
 
 # How to build locally
 
