@@ -1,4 +1,4 @@
-[![Release](https://img.shields.io/docker/build/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
+[![](https://img.shields.io/docker/automated/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
 
 This container is a maven runner to generate a project using the m2 repository package in the container for the archetype
 [Spring Web MVC Maven Archetype starter](https://github.com/dilbertside/spring-mvc-start-archetype)
