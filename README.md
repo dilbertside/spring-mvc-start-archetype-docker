@@ -30,6 +30,14 @@ docker run -it --rm -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven diside/spri
 ## Generated project compilation, test
 
 ```bash
-cd <your-poject>
+cd <your-project>
 docker run -it --rm -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven diside/spring-mvc-start-archetype-docker:latest sh -c "mvn -q clean package test -Ptest && ls target"
 ```
+
+##  Build Docker images with [Google JIB project](https://github.com/GoogleContainerTools/jib)
+
+```bash
+cd <your-project>
+docker run -it --rm -v "$(pwd)":/usr/src/mymaven -v /var/run/docker.sock:/var/run/docker.sock -w /usr/src/mymaven diside/spring-mvc-start-archetype-docker:latest sh -c "mvn compile -Dimage=diside/webapp:0.0.1 jib-maven-plugin:dockerBuild"
+```
+change `diside/webapp:0.0.1` with your own docker registry and naming convention.
