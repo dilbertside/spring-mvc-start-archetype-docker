@@ -1,5 +1,5 @@
 FROM maven:3.6.0-jdk-8-slim
-ARG VERSION=5.1.5
+ARG VERSION=5.1.6
 LABEL Description="maven runner for https://github.com/dilbertside/spring-mvc-start-archetype" Vendor="https://github.com/dilbertside" Version="$VERSION"
 
 # https://stackoverflow.com/questions/53010200/maven-surefire-could-not-find-forkedbooter-class
