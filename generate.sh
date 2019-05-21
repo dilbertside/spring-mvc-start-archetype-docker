@@ -11,7 +11,7 @@ then
   exit 1
 fi
 
-VERSION_SMSA=5.1.8
+VERSION_SMSA=5.1.9
 REPO=diside
 IMG=spring-mvc-start-archetype-docker
 VERSION_SMSAD=latest
