@@ -1,6 +1,6 @@
 # Spring MVC Start Maven archetype docker runner
 
-[![](https://img.shields.io/docker/automated/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags) [![](https://img.shields.io/docker/build/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker) [![](https://images.microbadger.com/badges/image/diside/spring-mvc-start-archetype-docker:5.1.9.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker) [![](https://images.microbadger.com/badges/version/diside/spring-mvc-start-archetype-docker:5.1.9.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
+[![](https://img.shields.io/docker/automated/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags) [![](https://img.shields.io/docker/build/diside/spring-mvc-start-archetype-docker.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker) [![](https://images.microbadger.com/badges/image/diside/spring-mvc-start-archetype-docker:5.1.10.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker) [![](https://images.microbadger.com/badges/version/diside/spring-mvc-start-archetype-docker:5.1.10.svg)](https://hub.docker.com/r/diside/spring-mvc-start-archetype-docker/tags)
 
 [](https://microbadger.com/images/diside/spring-mvc-start-archetype-docker)
 
@@ -24,7 +24,7 @@ Goto one directory which does not contain any pom.xml and run the following
 ## Project generation
 
 ```bash
-docker run -it --rm -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven diside/spring-mvc-start-archetype-docker mvn archetype:generate -DarchetypeGroupId=com.github.dilbertside -DarchetypeArtifactId=spring-mvc-start-archetype -DarchetypeVersion=5.1.9
+docker run -it --rm -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven diside/spring-mvc-start-archetype-docker mvn archetype:generate -DarchetypeGroupId=com.github.dilbertside -DarchetypeArtifactId=spring-mvc-start-archetype -DarchetypeVersion=5.1.10
 ```
 
 ## Generated project compilation, test
